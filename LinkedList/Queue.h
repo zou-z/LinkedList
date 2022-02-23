@@ -3,9 +3,9 @@
 namespace LinkedList
 {
     /// <summary>
-    /// é˜Ÿåˆ—é“¾è¡¨
+    /// ¶ÓÁĞÁ´±í
     /// </summary>
-    /// <typeparam name="T">éæŒ‡é’ˆç±»å‹</typeparam>
+    /// <typeparam name="T">·ÇÖ¸ÕëÀàĞÍ</typeparam>
     template<typename T> struct Queue
     {
     public:
