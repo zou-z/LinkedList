@@ -4,7 +4,7 @@
 
 int main()
 {
-	Test::QueueTest1();
-	system("pause");
-	return 0;
+    Test::QueueTest1();
+    system("pause");
+    return 0;
 }
