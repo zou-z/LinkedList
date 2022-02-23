@@ -25,7 +25,7 @@
 
 基于链表的栈。
 
-
+[查看定义](https://github.com/zou-z/LinkedList/blob/main/LinkedList/Stack.h)
 
 ### 成员函数
 
