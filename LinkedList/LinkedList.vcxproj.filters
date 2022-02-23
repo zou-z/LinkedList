@@ -5,6 +5,9 @@
     <ClCompile Include="QueueTest.cpp">
       <Filter>LinkedListTest</Filter>
     </ClCompile>
+    <ClCompile Include="StackTest.cpp">
+      <Filter>LinkedListTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LinkedList">
@@ -19,6 +22,12 @@
       <Filter>LinkedList</Filter>
     </ClInclude>
     <ClInclude Include="QueueTest.h">
+      <Filter>LinkedListTest</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="StackTest.h">
       <Filter>LinkedListTest</Filter>
     </ClInclude>
   </ItemGroup>

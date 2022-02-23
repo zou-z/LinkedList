@@ -141,10 +141,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="QueueTest.cpp" />
+    <ClCompile Include="StackTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Queue.h" />
     <ClInclude Include="QueueTest.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StackTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

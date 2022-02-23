@@ -1,10 +1,33 @@
-#include "Queue.h"
-#include "QueueTest.h"
+#include "Stack.h"
+#include "StackTest.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 namespace Test
 {
-    void QueueTest1()
+	void StackTest1()
+	{
+        system("pause");
+        char* ch1 = new char[] {'H', 'e', 'l', 'l', 'o', 0};
+        char* ch2 = new char[]{ 'W','o','r','l','d',0 };
+        char* ch3 = new char[]{ 'C','+','+',0 };
+
+        LinkedList::Stack<char> stack;
+        stack.Push(ch1);
+        stack.Push(ch2);
+        stack.Push(ch3);
+
+        system("pause");
+        while (stack.Size() > 0)
+        {
+            char* ch = stack.Pop();
+            printf("%s\n", ch);
+            delete[] ch;
+            ch = nullptr;
+        }
+	}
+
+    void StackTest2()
     {
         system("pause");
         size_t ch1Length = static_cast<size_t>(1024 * 1024) * 2;
@@ -21,21 +44,21 @@ namespace Test
             ch2[i] = (char)(97 + (i % 26));
         }
 
-        LinkedList::Queue<char> queue;
-        queue.Push(ch1);
-        queue.Push(ch2);
+        LinkedList::Stack<char> stack;
+        stack.Push(ch1);
+        stack.Push(ch2);
 
         system("pause");
-        while (queue.Size() > 0)
+        while (stack.Size() > 0)
         {
-            char* ch = queue.Pop();
+            char* ch = stack.Pop();
 
             delete[] ch;
             ch = nullptr;
         }
     }
 
-    void QueueTest2()
+    void StackTest3()
     {
         system("pause");
         struct MyStruct
@@ -74,14 +97,14 @@ namespace Test
         stru2->Name = ch2;
         stru1->Index = 1;
         stru2->Index = 2;
-        LinkedList::Queue<MyStruct> queue;
-        queue.Push(stru1);
-        queue.Push(stru2);
+        LinkedList::Stack<MyStruct> stack;
+        stack.Push(stru1);
+        stack.Push(stru2);
 
         system("pause");
-        while (queue.Size() > 0)
+        while (stack.Size() > 0)
         {
-            MyStruct* stru = queue.Pop();
+            MyStruct* stru = stack.Pop();
 
             delete stru;
             stru = nullptr;
