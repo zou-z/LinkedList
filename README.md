@@ -5,6 +5,8 @@
 
 基于链表的队列。
 
+[查看定义](https://github.com/zou-z/LinkedList/blob/main/LinkedList/Queue.h)
+
 ### 成员函数
 
 > void Push(T*);
