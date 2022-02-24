@@ -8,6 +8,9 @@
     <ClCompile Include="StackTest.cpp">
       <Filter>LinkedListTest</Filter>
     </ClCompile>
+    <ClCompile Include="ListTest.cpp">
+      <Filter>LinkedListTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LinkedList">
@@ -32,6 +35,9 @@
     </ClInclude>
     <ClInclude Include="List.h">
       <Filter>LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="ListTest.h">
+      <Filter>LinkedListTest</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
