@@ -87,4 +87,23 @@ namespace Test
             stru = nullptr;
         }
     }
+
+    void QueueTest3()
+    {
+        system("pause");
+        LinkedList::Queue2<int> queue;
+        size_t length = static_cast<size_t>(1024 * 1024) * 2;
+        for (size_t i = 0; i < length; ++i)
+        {
+            int num = i % 10;
+            queue.Push(num);
+        }
+
+        system("pause");
+        while (queue.Size() > 0)
+        {
+            int num = queue.Pop();
+            
+        }
+    }
 }

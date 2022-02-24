@@ -5,7 +5,7 @@
 
 int main()
 {
-    Test::StackTest3();
+    Test::StackTest4();
     system("pause");
     return 0;
 }

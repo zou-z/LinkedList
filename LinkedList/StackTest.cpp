@@ -5,12 +5,12 @@
 
 namespace Test
 {
-	void StackTest1()
-	{
+    void StackTest1()
+    {
         system("pause");
         char* ch1 = new char[] {'H', 'e', 'l', 'l', 'o', 0};
-        char* ch2 = new char[]{ 'W','o','r','l','d',0 };
-        char* ch3 = new char[]{ 'C','+','+',0 };
+        char* ch2 = new char[] { 'W', 'o', 'r', 'l', 'd', 0 };
+        char* ch3 = new char[] { 'C', '+', '+', 0 };
 
         LinkedList::Stack<char> stack;
         stack.Push(ch1);
@@ -25,7 +25,7 @@ namespace Test
             delete[] ch;
             ch = nullptr;
         }
-	}
+    }
 
     void StackTest2()
     {
@@ -108,6 +108,25 @@ namespace Test
 
             delete stru;
             stru = nullptr;
+        }
+    }
+
+    void StackTest4()
+    {
+        system("pause");
+        LinkedList::Stack2<int> stack;
+        size_t length = static_cast<size_t>(1024 * 1024) * 2;
+        for (size_t i = 0; i < length; ++i)
+        {
+            int num = i % 10;
+            stack.Push(num);
+        }
+
+        system("pause");
+        while (stack.Size() > 0)
+        {
+            int num = stack.Pop();
+
         }
     }
 }
